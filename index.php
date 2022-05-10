@@ -12,6 +12,10 @@
 <form method="post" name="dados" action="insert.php" onSubmit="return enviardados();">
   <fieldset>
     <legend>Suporte!</legend>
+    <!-- <p>
+    <label for="size_1">Id:</label>  
+    <input type="text" name="dados_id" id="dados_id" value="" />
+    </p> -->
     <p>
     <label for="size_1">Nome Completo:</label>  
     <input type="text" name="nome" id="nome" value="" />
@@ -33,9 +37,10 @@
     <tr>
             <td height="22"></td>
             <td>
-               <input name="Submit" type="submit" class="formobjects" value="Cadastrar">
+               <input name="Submit" type="submit" class="formobjects" formaction="index.php" value="Cadastrar">
                <input name="Reset" type="reset" class="formobjects" value="Limpar campos">
-               <button type='submit' formaction='le_texto.php'>Consultar</button>
+               <input name="Ler" type="submit" formaction="select.php" value="Ler"> 
+               <input name="Deletar" type="submit" formaction="deletar.php" value="Deletar"> 
             </td>
          </tr>
   </fieldset>
