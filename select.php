@@ -11,9 +11,9 @@ if (mysqli_num_rows($rs) > 0) {
     // mysql_fetch_assoc() busca o resultado de uma linha e o coloca numa matriz associativa
     // podendo selecionar nome do campo.
     while($row = mysqli_fetch_assoc($rs)) {
-        echo "Nome: " . $row["nome"].
+        echo" - Id: " . $row['dados_id']. 
+            " - Nome: " . $row["nome"].
             " - Email: " . $row["email"].
-            " - Id: " . $row['dados_id'].
             " - Data: " . date("d/m/y",strtotime($row["data"])).
             " - Dúvida: " . $row["duvida"]. "<br>";
     }

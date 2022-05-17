@@ -14,7 +14,7 @@
     <legend>Suporte!</legend>
     <p>
     <label for="size_1">Id:</label>  
-    <input type="text" name="dados_id" id="dados_id" value="" />
+    <input type="text"  name="dados_id" id="dados_id" value="" />
     </p>
 
     <tr>
@@ -23,7 +23,9 @@
                <input name="Submit" type="submit" class="formobjects" value="Cadastrar">
                <input name="Reset" type="reset" class="formobjects" value="Limpar campos">
                <input name="Ler" type="submit" formaction="select.php" value="Ler"> 
-               <input name="Deletar" type="submit" formaction="delete.php" value="Deletar"> 
+               <input name="Deletarac" type="submit" formaction="delete.php" value="Deletar!"> 
+               <input name="Atualizarr" type="submit" formaction="update.php" value="Atualizar"> 
+
             </td>
          </tr>
   </fieldset>
